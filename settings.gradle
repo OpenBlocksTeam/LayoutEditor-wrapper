@@ -1,2 +1,6 @@
-include ':app'
+include ':module-interface'
+include ':layout-editor'
+include ':module'
+project(':layout-editor').projectDir = new File(rootDir, 'LayoutEditor/app/')
+project(':module-interface').projectDir = new File(rootDir, 'openblocks-module-interface/lib/')
 rootProject.name = "LayoutEditor-wrapper"
